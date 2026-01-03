@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 4.0)
+set(CMAKE_CXX_STANDARD 20)
+
+project(Simple-Geometry)
+
+# Define directories for header and source files
+include_directories(include)
+file(GLOB_RECURSE SOURCES_ "sources/*.cpp")
+
+
+# Build
+add_executable(main ${SOURCES_})
+
